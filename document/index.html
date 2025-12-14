@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Workspace - HTML Template Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef3f6;
+            padding: 40px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #0d536d;
+        }
+        pre {
+            background: #1a1a1a;
+            color: #4ae3ff;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        a {
+            color: #0d536d;
+            font-weight: bold;
+        }
+        ul li {
+            margin: 6px 0;
+        }
+        hr {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Nexus Workspace – HTML5 Template Documentation</h1>
+    <p>Thank you for choosing <strong>Nexus Workspace – Co-Working Space & Office Booking HTML Template</strong>. This guide will help you install, edit, and deploy the template easily.</p>
+
+    <hr>
+    <h2>📁 1. Folder Structure</h2>
+    <pre><code>
+NexusWorkspace/
+│── index.html
+│── blog.html
+│── blog-detail.html
+│── meeting-room.html
+│── book.html
+│── privacy-policy.html
+│── terms-of-service.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── aos.css
+│   │   └── bootstrap.min.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── aos.js
+│   │   └── bootstrap.bundle.min.js
+│   ├── images/
+│   └── fonts/
+    </code></pre>
+
+    <hr>
+    <h2>🎨 2. Editing Theme Colors</h2>
+    <p>All brand colors are set as CSS variables inside <b>assets/css/style.css</b>:</p>
+
+<pre><code>:root {
+    --teal: #00c6b1;
+    --navy: #0A1533;
+    --light: #f8f9fa;
+    --gray-text: #6c757d;
+}</code></pre>
+
+    <p>You can change <b>--teal</b> to replace primary theme color globally.</p>
+
+    <hr>
+    <h2>🖼 3. Changing the Logo</h2>
+    <p>Inside navigation in <b>index.html</b>:</p>
+
+<pre><code>&lt;a class="navbar-brand fw-bold fs-3" href="#"&gt;
+    NEXUS&lt;span class="text-teal"&gt;.&lt;/span&gt;
+&lt;/a&gt;
+</code></pre>
+
+    <p>To use image logo:</p>
+<pre><code>&lt;a class="navbar-brand" href="#"&gt;
+    &lt;img src="assets/images/logo.png" alt="logo" height="50"&gt;
+&lt;/a&gt;
+</code></pre>
+
+    <hr>
+    <h2>🏠 4. Sections Overview</h2>
+
+| Section                 | Location in HTML | Editable Items |
+|------------------------|----------------|----------------|
+| Hero Banner            | `#home`        | Title, button text, background |
+| About Section          | `#about`       | Text & image |
+| Services               | `#services`    | Cards, icons, links |
+| Pricing Plans          | `#pricing`     | Price values & features |
+| Gallery with Lightbox  | `#gallery`     | Image thumbnails |
+| Testimonials Carousel  | Section below gallery | Text & images |
+| Contact Form           | `#contact`     | Fields & API integration |
+| Footer                 | Footer element | Links, social icons |
+
+    <hr>
+    <h2>🖼 5. Editing Gallery Images</h2>
+    <p>Replace images in:</p>
+    <pre><code>assets/images/</code></pre>
+
+    <p>We recommend keeping similar resolution for best output.</p>
+
+    <hr>
+    <h2>💬 6. AI Chat Widget</h2>
+    <p>Chat widget code located near bottom of <b>index.html</b>. To disable, remove:</p>
+
+<pre><code>&lt;div id="chat-widget-container"&gt; ... &lt;/div&gt;</code></pre>
+
+    <hr>
+    <h2>📩 7. Contact Form Integration</h2>
+    <p>Form currently uses a dummy alert. You can replace <b>onsubmit</b> handler:</p>
+
+<pre><code>&lt;form action="send-mail.php" method="POST"&gt;
+</code></pre>
+
+    <p>Supported services:</p>
+    <ul>
+        <li>PHPMailer</li>
+        <li>Web3Forms</li>
+        <li>Formspree</li>
+    </ul>
+
+    <hr>
+    <h2>✨ 8. AOS Animations</h2>
+    <pre><code>data-aos="fade-up" data-aos-delay="200"</code></pre>
+    <p>More effects: <a href="https://michalsnik.github.io/aos/">AOS Docs</a></p>
+
+    <hr>
+    <h2>📦 9. Included Libraries</h2>
+    <ul>
+        <li>Bootstrap 5.3</li>
+        <li>Bootstrap Icons</li>
+        <li>Animate.css</li>
+        <li>AOS Animation Library</li>
+        <li>Google Fonts – Outfit & Space Grotesk</li>
+    </ul>
+
+    <hr>
+    <h2>🚀 10. Deployment Guide</h2>
+    <p>You can upload the project to:</p>
+    <ul>
+        <li>cPanel / Hosting Servers</li>
+        <li>Netlify / Vercel</li>
+        <li>GitHub Pages</li>
+    </ul>
+    <p>No build process required. It is a pure HTML5/CSS/JS template.</p>
+
+    <hr>
+    <h3>📧 Support</h3>
+    <p>If you need installation help or customization support, feel free to contact your developer.</p>
+
+    <h2>Thank You for Purchasing! 🎉</h2>
+</div>
+</body>
+</html>

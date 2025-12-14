@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nexus Workspace</title>
+    <meta name="description" content="Insights, tips, and news about co-working, productivity, and the future of work.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/work-desk.png">
+
+    <!-- AOS Animation Library -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader-container">
+        <div class="text-center">
+            <div class="spinner-border text-teal mb-3" style="width: 3rem; height: 3rem;" role="status"></div>
+            <h2 class="text-white h4 tracking-widest animate__animated animate__pulse animate__infinite">NEXUS</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark transition-all" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                NEXUS<span class="text-teal">.</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="book.html" class="btn btn-teal rounded-pill px-4 fw-semibold">Book a Desk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-2 fw-bold mb-4 animate__animated animate__fadeInUp">
+                        Nexus <span class="text-teal">Insights</span>
+                    </h1>
+                    <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                        Discover articles, tips, and industry insights about the future of work, productivity, and
+                        co-working spaces.
+                    </p>
+                    <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-person-circle fs-4 me-2"></i>
+                                <span>Written by industry experts</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-calendar-check fs-4 me-2"></i>
+                                <span>Weekly updates</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-section">
+        <div class="container">
+            <!-- Search Box -->
+            <div class="blog-search" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3 class="fw-bold text-navy mb-3">Search Our Articles</h3>
+                        <p class="text-muted mb-0">Find articles about specific topics or browse by category</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="search-box">
+                            <i class="bi bi-search"></i>
+                            <input type="text" id="searchInput" placeholder="Search articles...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+
+
+
+                    <!-- Article List -->
+                    <div id="articleList">
+                        <!-- Articles will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination" class="mt-5">
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="100">
+                        <h4 class="widget-title">Categories</h4>
+                        <ul class="category-list" id="categoryList">
+                            <!-- Categories will be populated by JavaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="200">
+                        <h4 class="widget-title">Recent Posts</h4>
+                        <div id="recentPosts">
+                            <!-- Recent posts will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="newsletter-widget" data-aos="fade-left" data-aos-delay="300">
+                        <h4 class="widget-title">Stay Updated</h4>
+                        <p class="text-white-50 mb-4">Get the latest articles and insights delivered to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-teal w-100">Subscribe</button>
+                        </form>
+                        <p class="text-white-50 small mt-3">No spam. Unsubscribe anytime.</p>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="400">
+                        <h4 class="widget-title">Popular Tags</h4>
+                        <div class="tags-container" id="tagsContainer">
+                            <!-- Tags will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Article Modal -->
+    <div class="modal fade" id="articleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="blog-article" id="articleContent">
+                        <!-- Article content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-navy">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5 mb-5">
+                <!-- Logo and Description -->
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <h3 class="fw-bold text-white mb-3">NEXUS<span class="text-teal">.</span></h3>
+                        <p class="text-white-50 mb-4">
+                            Redefining the modern workspace with flexibility, community, and premium amenities at the
+                            core
+                            of everything we do.
+                        </p>
+                    </div>
+                    <!-- Social Icons with Hover Effect -->
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#home" class="footer-link">Home</a></li>
+                        <li class="mb-3"><a href="#about" class="footer-link">About Us</a></li>
+                        <li class="mb-3"><a href="#services" class="footer-link">Services</a></li>
+                        <li class="mb-3"><a href="#pricing" class="footer-link">Pricing</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="private.html" class="footer-link">Private Office</a></li>
+                        <li class="mb-3"><a href="Dedicated-Desk.html" class="footer-link">Dedicated Desk</a></li>
+                        <li class="mb-3"><a href="hotdesk.html" class="footer-link">Hot Desk</a></li>
+                        <li class="mb-3"><a href="meeting-room.html" class="footer-link">Meeting Rooms</a></li>
+                        <li><a href="culture.html" class="footer-link">Culture</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Stay Updated</h5>
+                    <p class="text-white-50 mb-4">Subscribe to our newsletter for the latest updates and exclusive
+                        offers.</p>
+                    <div class="newsletter-form">
+                        <div class="input-group mb-3">
+                             <input id="newsletterEmail" type="email" class="form-control bg-navy-light border-0 text-white"
+        placeholder="Your email address">
+                            <button class="btn btn-teal" id="newsletterbtn" type="button">Subscribe</button>
+                        </div>
+                        <p class="text-white-50 small">By subscribing, you agree to our Privacy Policy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom border-top border-navy-light pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="text-white-50 mb-0">&copy; 2026 Nexus Workspace. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="privacy-policy.html" class="footer-link me-4">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="footer-link me-4">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn-scroll-top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+    <!-- Chat Widget HTML -->
+    <div id="chat-widget-container">
+        <button id="chat-toggle-btn"
+            class="btn btn-teal rounded-circle shadow-lg d-flex align-items-center justify-content-center">
+            <i class="bi bi-chat-dots-fill fs-4"></i>
+        </button>
+
+        <div id="chat-window" class="card shadow-xl border-0 d-none animate__animated animate__fadeInUp">
+            <div class="card-header bg-navy text-white p-3 border-0 d-flex align-items-center">
+                <div class="bg-teal rounded-circle p-2 me-2 d-flex align-items-center justify-content-center"
+                    style="width: 36px; height: 36px;">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <h6 class="mb-0 fw-bold">Nexus Assistant</h6>
+                    <small class="text-white-50" style="font-size: 0.75rem;">AI-powered workspace concierge</small>
+                </div>
+                <button id="chat-close-btn" class="btn btn-link text-white p-0"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div id="chat-messages" class="card-body bg-light overflow-auto p-3 d-flex flex-column gap-3"
+                style="height: 400px;">
+                <!-- Messages go here -->
+                <div class="d-flex justify-content-start">
+                    <div class="bg-white p-3 rounded-top-0 border shadow-sm" style="max-width: 85%;">
+                        <span class="fw-semibold text-teal">Nexus Assistant:</span> Hello! I'm your virtual workspace
+                        concierge. How can I help you today? You can ask about pricing, amenities, booking tours, or our
+                        services.
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-white p-3 border-top">
+                <div class="input-group">
+                    <input type="text" id="chat-input" class="form-control bg-light border-0 rounded-start"
+                        placeholder="Ask about pricing, amenities, or booking...">
+                    <button id="chat-send-btn" class="btn btn-teal rounded-end"><i class="bi bi-send-fill"></i></button>
+                </div>
+                <div class="mt-2 text-center">
+                    <small class="text-muted">Try asking: "What are your pricing plans?" or "How do I book a
+                        tour?"</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/prism.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Blog Data
+        const blogPosts = [
+            // Featured post already in HTML, so start from id: 1
+            {
+                id: 1,
+                category: 'productivity',
+                categoryName: 'Productivity',
+                title: '10 Productivity Hacks for Remote Workers',
+                excerpt: 'Discover proven strategies to boost your productivity while working remotely, from time management techniques to workspace optimization.',
+                image: 'assets/images/Productivity.jpeg',
+                date: 'Nov 12, 2026',
+                readTime: '6 min',
+                views: '1.8k',
+                likes: 287,
+                comments: 32,
+                author: {
+                    name: 'Sarah Johnson',
+                    title: 'Productivity Coach',
+                    avatar: 'assets/images/sarah.jpeg'
+                },
+                featured: false
+            },
+            {
+                id: 2,
+                category: 'workspace-design',
+                categoryName: 'Workspace Design',
+                title: 'Ergonomic Workspace: A Guide to Healthy Working',
+                excerpt: 'Learn how to design an ergonomic workspace that prevents strain and promotes health, productivity, and comfort throughout your workday.',
+                image: 'assets/images/Standing.jpeg',
+                date: 'Nov 8, 2026',
+                readTime: '7 min',
+                views: '2.1k',
+                likes: 342,
+                comments: 41,
+                author: {
+                    name: 'Dr. Alex Rivera',
+                    title: 'Ergonomics Specialist',
+                    avatar: 'assets/images/Sameer.jpg'
+                },
+                featured: false
+            },
+            {
+                id: 3,
+                category: 'remote-work',
+                categoryName: 'Remote Work',
+                title: 'Building Strong Remote Teams: Best Practices',
+                excerpt: 'Effective strategies for building and maintaining strong team dynamics in remote and hybrid work environments.',
+                image: 'assets/images/Workspace.jpeg',
+                date: 'Nov 5, 2026',
+                readTime: '9 min',
+                views: '3.2k',
+                likes: 456,
+                comments: 67,
+                author: {
+                    name: 'Emma Wilson',
+                    title: 'Team Leadership Expert',
+                    avatar: 'assets/images/Emma.jpeg'
+                },
+                featured: true
+            },
+            {
+                id: 4,
+                category: 'technology',
+                categoryName: 'Technology',
+                title: 'Essential Tech Tools for Modern Workspaces',
+                excerpt: 'A comprehensive review of the best technology tools and software that are transforming modern workspaces and boosting collaboration.',
+                image: 'assets/images/Meeting.jpeg',
+                date: 'Oct 30, 2026',
+                readTime: '5 min',
+                views: '1.5k',
+                likes: 198,
+                comments: 28,
+                author: {
+                    name: 'Tech Team Nexus',
+                    title: 'Technology Department',
+                    avatar: 'assets/images/Amit.jpeg'
+                },
+                featured: false
+            },
+            {
+                id: 5,
+                category: 'community',
+                categoryName: 'Community',
+                title: 'The Power of Co-working Communities',
+                excerpt: 'How co-working spaces foster meaningful connections, collaboration, and professional growth through intentional community building.',
+                image: 'assets/images/Community.jpeg',
+                date: 'Oct 25, 2026',
+                readTime: '8 min',
+                views: '2.7k',
+                likes: 389,
+                comments: 52,
+                author: {
+                    name: 'Lisa Chen',
+                    title: 'Community Manager',
+                    avatar: 'assets/images/2151696416.jpg'
+                },
+                featured: false
+            }
+
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 5. Initialize Blog
+            initBlog();
+
+            // 6. Initialize Search
+            initSearch();
+        });
+
+        // Blog Functions
+        function initBlog() {
+            // Render blog posts
+            renderBlogPosts();
+
+            // Initialize categories
+            initCategories();
+
+            // Initialize recent posts
+            initRecentPosts();
+
+            // Initialize tags
+            initTags();
+        }
+
+        function renderBlogPosts() {
+            const articleList = document.getElementById('articleList');
+            articleList.innerHTML = '';
+
+            // Sort by date (newest first)
+            const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            // Filter out featured post (already displayed in HTML)
+            const regularPosts = sortedPosts.filter(post => !post.featured || post.id === 3); // Only include featured post with id 3
+
+            // Render posts
+            regularPosts.forEach((post, index) => {
+                const blogCard = document.createElement('div');
+                blogCard.className = 'blog-card';
+                blogCard.dataset.id = post.id;
+                blogCard.dataset.aos = 'fade-up';
+                blogCard.dataset.aosDelay = `${(index + 1) * 100}`;
+
+                blogCard.innerHTML = `
+                    <img src="${post.image}" alt="${post.title}" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="bi bi-calendar"></i> ${post.date}</span>
+                            <span><i class="bi bi-clock"></i> ${post.readTime} read</span>
+                            <span><i class="bi bi-eye"></i> ${post.views} views</span>
+                        </div>
+                        <span class="blog-category">${post.categoryName}</span>
+                        <h3 class="blog-title">${post.title}</h3>
+                        <p class="blog-excerpt">${post.excerpt}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="blog-detail.html" class="read-more" onclick="openArticle(${post.id}); return false;">
+                                Read Full Article <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <div class="blog-actions">
+                                <a href="#" class="action-btn-blog">
+                                    <i class="bi bi-heart"></i> ${post.likes}
+                                </a>
+                                <a href="#" class="action-btn-blog">
+                                    <i class="bi bi-chat"></i> ${post.comments}
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog-author">
+                            <img src="${post.author.avatar}" alt="${post.author.name}" class="author-avatar">
+                            <div class="author-info">
+                                <h5>${post.author.name}</h5>
+                                <p>${post.author.title}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                articleList.appendChild(blogCard);
+            });
+        }
+
+        function initCategories() {
+            const categoryList = document.getElementById('categoryList');
+            const categories = {};
+
+            // Count posts per category
+            blogPosts.forEach(post => {
+                if (!categories[post.categoryName]) {
+                    categories[post.categoryName] = 0;
+                }
+                categories[post.categoryName]++;
+            });
+
+            // Add "All" category
+            const allCategory = document.createElement('li');
+            allCategory.className = 'category-item';
+            allCategory.innerHTML = `
+                <a href="#" class="category-link active" data-category="all">
+                    <span>All Categories</span>
+                    <span class="category-count">${blogPosts.length}</span>
+                </a>
+            `;
+            categoryList.appendChild(allCategory);
+
+            // Add other categories
+            Object.entries(categories).forEach(([name, count]) => {
+                const categoryItem = document.createElement('li');
+                categoryItem.className = 'category-item';
+                categoryItem.innerHTML = `
+                    <a href="#" class="category-link" data-category="${name.toLowerCase().replace(/\s+/g, '-')}">
+                        <span>${name}</span>
+                        <span class="category-count">${count}</span>
+                    </a>
+                `;
+                categoryList.appendChild(categoryItem);
+            });
+
+            // Add click events
+            document.querySelectorAll('.category-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // Update active class
+                    document.querySelectorAll('.category-link').forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+
+                    // Filter posts
+                    const category = link.dataset.category;
+                    filterPostsByCategory(category);
+                });
+            });
+        }
+
+        function initRecentPosts() {
+            const recentPostsContainer = document.getElementById('recentPosts');
+            const recentPosts = [...blogPosts]
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
+                .slice(0, 4);
+
+            recentPosts.forEach(post => {
+                const recentPost = document.createElement('div');
+                recentPost.className = 'recent-post';
+
+                recentPost.innerHTML = `
+                    <img src="${post.image}" alt="${post.title}" class="recent-post-image">
+                    <div class="recent-post-content">
+                        <h5 class="recent-post-title">
+                            <a href="#article-${post.id}" onclick="openArticle(${post.id}); return false;">${post.title}</a>
+                        </h5>
+                        <div class="recent-post-date">
+                            <i class="bi bi-calendar"></i> ${post.date}
+                        </div>
+                    </div>
+                `;
+
+                recentPostsContainer.appendChild(recentPost);
+            });
+        }
+
+        function initTags() {
+            const tagsContainer = document.getElementById('tagsContainer');
+            const tags = [
+                'Productivity', 'Remote Work', 'Workspace Design', 'Collaboration',
+                'Technology', 'Wellness', 'Sustainability', 'Entrepreneurship',
+                'Community', 'Innovation', 'Workplace Culture', 'Flexible Work'
+            ];
+
+            tags.forEach(tag => {
+                const tagElement = document.createElement('a');
+                tagElement.href = '#';
+                tagElement.className = 'tag';
+                tagElement.textContent = tag;
+                tagElement.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Filter by tag
+                    document.getElementById('searchInput').value = tag;
+                    filterPostsBySearch(tag);
+                });
+                tagsContainer.appendChild(tagElement);
+            });
+        }
+
+        function filterPostsByCategory(category) {
+            const articleList = document.getElementById('articleList');
+            const allCards = articleList.querySelectorAll('.blog-card');
+
+            allCards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardCategory = card.querySelector('.blog-category').textContent
+                        .toLowerCase()
+                        .replace(/\s+/g, '-');
+
+                    if (cardCategory === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+
+            // Show/hide empty state
+            const visibleCards = Array.from(allCards).filter(card => card.style.display !== 'none');
+            if (visibleCards.length === 0) {
+                articleList.innerHTML = `
+                    <div class="text-center py-5">
+                        <i class="bi bi-journal-x fs-1 text-muted mb-3"></i>
+                        <h4 class="fw-bold text-navy mb-3">No articles found</h4>
+                        <p class="text-muted mb-4">Try selecting a different category or browse all articles.</p>
+                        <button class="btn btn-teal" onclick="resetFilters()">Show All Articles</button>
+                    </div>
+                `;
+            }
+        }
+
+        function initSearch() {
+            const searchInput = document.getElementById('searchInput');
+            let searchTimeout;
+
+            searchInput.addEventListener('input', (e) => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    filterPostsBySearch(e.target.value);
+                }, 300);
+            });
+
+            // Add search icon click
+            document.querySelector('.search-box i').addEventListener('click', () => {
+                filterPostsBySearch(searchInput.value);
+            });
+        }
+
+        function filterPostsBySearch(query) {
+            if (!query.trim()) {
+                // Show all posts if search is empty
+                document.querySelectorAll('.blog-card').forEach(card => {
+                    card.style.display = 'block';
+                });
+                return;
+            }
+
+            const searchTerm = query.toLowerCase();
+            const articleList = document.getElementById('articleList');
+            const allCards = articleList.querySelectorAll('.blog-card');
+
+            allCards.forEach(card => {
+                const title = card.querySelector('.blog-title').textContent.toLowerCase();
+                const excerpt = card.querySelector('.blog-excerpt').textContent.toLowerCase();
+                const category = card.querySelector('.blog-category').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || excerpt.includes(searchTerm) || category.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    // Highlight matching text
+                    highlightText(card, searchTerm);
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide empty state
+            const visibleCards = Array.from(allCards).filter(card => card.style.display !== 'none');
+            if (visibleCards.length === 0) {
+                articleList.innerHTML = `
+                    <div class="text-center py-5">
+                        <i class="bi bi-search fs-1 text-muted mb-3"></i>
+                        <h4 class="fw-bold text-navy mb-3">No results found for "${query}"</h4>
+                        <p class="text-muted mb-4">Try different keywords or browse all articles.</p>
+                        <button class="btn btn-teal" onclick="resetFilters()">Show All Articles</button>
+                    </div>
+                `;
+            }
+        }
+
+        function highlightText(element, searchTerm) {
+            // Remove any existing highlights
+            const highlights = element.querySelectorAll('.highlight');
+            highlights.forEach(highlight => {
+                const parent = highlight.parentNode;
+                parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+                parent.normalize();
+            });
+
+            // Highlight matching text in title and excerpt
+            const title = element.querySelector('.blog-title');
+            const excerpt = element.querySelector('.blog-excerpt');
+
+            [title, excerpt].forEach(element => {
+                const text = element.textContent;
+                const regex = new RegExp(`(${searchTerm})`, 'gi');
+                const newText = text.replace(regex, '<span class="highlight bg-teal-light text-teal px-1 rounded">$1</span>');
+                element.innerHTML = newText;
+            });
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.querySelectorAll('.category-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.category === 'all') {
+                    link.classList.add('active');
+                }
+            });
+            renderBlogPosts();
+        }
+
+        // Article Modal
+        const articleModal = new bootstrap.Modal(document.getElementById('articleModal'));
+
+        function openArticle(articleId) {
+            const article = blogPosts.find(post => post.id === articleId);
+            if (!article) return;
+
+            const articleContent = document.getElementById('articleContent');
+
+            // Generate article HTML
+            articleContent.innerHTML = `
+                <div class="article-header">
+                    <span class="blog-category">${article.categoryName}</span>
+                    <h1 class="article-title">${article.title}</h1>
+                    <div class="article-meta">
+                        <span><i class="bi bi-calendar"></i> ${article.date}</span>
+                        <span><i class="bi bi-clock"></i> ${article.readTime} read</span>
+                        <span><i class="bi bi-eye"></i> ${article.views} views</span>
+                    </div>
+                    <div class="blog-author">
+                        <img src="${article.author.avatar}" alt="${article.author.name}" class="author-avatar">
+                        <div class="author-info">
+                            <h5>${article.author.name}</h5>
+                            <p>${article.author.title}</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="article-content">
+                    <img src="${article.image}" alt="${article.title}" class="img-fluid rounded-3 mb-4">
+                    
+                    <p>Welcome to our deep dive into ${article.categoryName.toLowerCase()}. In this comprehensive article, we'll explore the latest trends, best practices, and actionable insights that can transform your approach to work and productivity.</p>
+                    
+                    <h2>Understanding the Core Concepts</h2>
+                    <p>The landscape of work is evolving at an unprecedented pace. With technological advancements and shifting cultural expectations, organizations and individuals alike must adapt to stay competitive and maintain wellbeing.</p>
+                    
+                    <blockquote>
+                        "The future of work isn't about where you work, but how you work. It's about flexibility, autonomy, and creating environments where people can do their best work."
+                    </blockquote>
+                    
+                    <p>Recent studies have shown that employees who have control over their work environment and schedule report higher job satisfaction, increased productivity, and better work-life balance. This shift represents a fundamental change in how we think about work and workplace design.</p>
+                    
+                    <h2>Key Strategies for Success</h2>
+                    <p>Implementing effective ${article.categoryName.toLowerCase()} strategies requires careful planning and consideration. Here are some proven approaches:</p>
+                    
+                    <div class="code-block">
+                        <pre><code class="language-javascript">
+// Example workspace optimization code
+const workspaceOptimization = {
+    environment: 'ergonomic',
+    lighting: 'natural',
+    noiseLevel: 'moderate',
+    collaborationSpaces: true,
+    focusZones: true,
+    techIntegration: 'seamless'
+};
+
+function optimizeWorkspace(config) {
+    return {
+        productivity: calculateProductivityGains(config),
+        wellbeing: assessWellbeingImpact(config),
+        costEffectiveness: evaluateROI(config)
+    };
+}
+                        </code></pre>
+                    </div>
+                    
+                    <h3>Practical Implementation Tips</h3>
+                    <p>Start small and scale your initiatives. Consider these actionable steps:</p>
+                    
+                    <ul>
+                        <li>Conduct a workspace assessment to identify improvement areas</li>
+                        <li>Gather feedback from team members regularly</li>
+                        <li>Implement changes gradually and measure impact</li>
+                        <li>Invest in quality equipment and technology</li>
+                        <li>Create clear policies and guidelines</li>
+                    </ul>
+                    
+                    <h2>Measuring Success and ROI</h2>
+                    <p>Tracking the impact of your initiatives is crucial for continuous improvement. Key metrics to monitor include:</p>
+                    
+                    <ol>
+                        <li>Employee satisfaction scores</li>
+                        <li>Productivity metrics and output quality</li>
+                        <li>Retention rates and talent acquisition</li>
+                        <li>Operational cost savings</li>
+                        <li>Innovation and collaboration metrics</li>
+                    </ol>
+                    
+                    <p>Remember that the most successful implementations are those that evolve with feedback and changing needs. Stay flexible and be willing to adapt your approach as you learn what works best for your specific context.</p>
+                </div>
+                
+                <div class="article-footer">
+                    <div class="article-tags">
+                        <a href="#" class="tag">${article.categoryName}</a>
+                        <a href="#" class="tag">Workspace</a>
+                        <a href="#" class="tag">Innovation</a>
+                        <a href="#" class="tag">Best Practices</a>
+                    </div>
+                    
+                    <div class="blog-actions mt-4">
+                        <a href="#" class="action-btn-blog"">
+                            <i class="bi bi-heart"></i> Like (${article.likes})
+                        </a>
+                        <a href="#" class="action-btn-blog"">
+                            <i class="bi bi-chat"></i> Comment (${article.comments})
+                        </a>
+                        <a href="#" class="action-btn-blog"">
+                            <i class="bi bi-share"></i> Share
+                        </a>
+                       
+                    </div>
+                </div>
+            `;
+
+            // Initialize Prism for code highlighting
+            if (typeof Prism !== 'undefined') {
+                Prism.highlightAll();
+            }
+
+            // Show modal
+            articleModal.show();
+        }
+        // const readmore = document.getElementsByClassName('read-more');
+        // if (readmore) {
+        //     // Featured article click handler
+        //     document.querySelector('.featured .read-more').addEventListener('click', (e) => {
+        //         e.preventDefault();
+        //         openArticle(3); // Featured article ID
+        //     });
+        // }
+ </script>
+</body>
+</html>

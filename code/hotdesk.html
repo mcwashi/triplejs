@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Desk - Nexus Workspace</title>
+    <meta name="description"
+        content="Flexible hot desk solutions at Nexus Workspace. Work anywhere, anytime with our flexible seating options.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/work-desk.png">
+    <!-- AOS Animation Library -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+    <!-- Preloader -->
+    <div id="preloader" class="preloader-container">
+        <div class="text-center">
+            <div class="spinner-border text-teal mb-3" style="width: 3rem; height: 3rem;" role="status"></div>
+            <h2 class="text-white h4 tracking-widest animate__animated animate__pulse animate__infinite">NEXUS</h2>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark transition-all" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                NEXUS<span class="text-teal">.</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="book.html" class="btn btn-teal rounded-pill px-4 fw-semibold">Book a Desk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-white position-relative">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <span class="badge rounded-pill bg-teal-subtle text-teal border border-teal mb-3 px-3 py-2">
+                        ULTIMATE FLEXIBILITY
+                    </span>
+                    <h1 class="display-3 fw-bold mb-4">
+                        Work <span class="text-teal">Anywhere, Anytime</span>
+                    </h1>
+                    <p class="lead mb-5 text-light-50">
+                        Maximum flexibility with our hot desk solution. Choose any available seat in our vibrant
+                        workspace, perfect for freelancers, digital nomads, and flexible workers.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#pricing" class="btn btn-teal btn-lg rounded-pill px-5 py-3 shadow-lg">
+                            View Plans
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">
+                            Book a Day Pass
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="bg-navy-light rounded-4 p-4 border border-teal-subtle">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-teal rounded-circle p-2 me-3">
+                                <i class="bi bi-clock-history text-white"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-white mb-0">Current Availability</h5>
+                                <p class="text-white-50 mb-0 small">Real-time desk availability</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="spot-count mb-2">42</div>
+                            <div class="availability-indicator">
+                                <div class="availability-dot available"></div>
+                                <span class="text-white">Spots Available Today</span>
+                            </div>
+                            <p class="text-white-50 small mt-2">Updated every 15 minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits Section -->
+    <section class="py-section bg-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-teal fw-bold text-uppercase ls-2 mb-2">Why Hot Desking</h6>
+                <h2 class="display-5 fw-bold text-navy mb-4">Freedom Meets Productivity</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 800px;">
+                    Hot desking gives you the flexibility to work from different spots, meet new people, and find
+                    inspiration in every corner of our workspace.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center p-4 area-card rounded-3">
+                        <div class="bg-teal-subtle rounded-circle p-3 mb-3 mx-auto" style="width: 80px; height: 80px;">
+                            <i class="bi bi-calendar-check text-teal fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy mb-3">No Commitment</h4>
+                        <p class="text-muted">Pay as you go with daily, weekly, or monthly passes. No long-term
+                            contracts required.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center p-4  area-card rounded-3">
+                        <div class="bg-teal-subtle rounded-circle p-3 mb-3 mx-auto" style="width: 80px; height: 80px;">
+                            <i class="bi bi-compass text-teal fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy mb-3">Explore Spaces</h4>
+                        <p class="text-muted">Try different areas - quiet zones, collaborative spaces, or window seats
+                            with views.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center p-4  area-card rounded-3">
+                        <div class="bg-teal-subtle rounded-circle p-3 mb-3 mx-auto" style="width: 80px; height: 80px;">
+                            <i class="bi bi-people text-teal fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy mb-3">Network Naturally</h4>
+                        <p class="text-muted">Meet different professionals every day. Expand your network without
+                            effort.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-center p-4  area-card rounded-3">
+                        <div class="bg-teal-subtle rounded-circle p-3 mb-3 mx-auto" style="width: 80px; height: 80px;">
+                            <i class="bi bi-wallet text-teal fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy mb-3">Cost Effective</h4>
+                        <p class="text-muted">Access premium workspace amenities at a fraction of traditional office
+                            costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-section bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-teal fw-bold text-uppercase ls-2 mb-2">Flexible Plans</h6>
+                <h2 class="display-5 fw-bold text-navy mb-4">Choose Your Hot Desk Plan</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">All plans include high-speed internet, premium
+                    amenities, and access to common areas.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Day Pass -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card plan-card h-100 border border-light shadow-sm rounded-4 p-3">
+                        <div class="card-body">
+                            <h4 class="fw-bold text-navy mb-3">Day Pass</h4>
+                            <div class="my-4">
+                                <span class="display-4 fw-bold text-navy">$25</span>
+                                <span class="text-muted">/ day</span>
+                            </div>
+                            <p class="text-muted mb-4">Perfect for trying out our space or occasional use</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> 9AM - 6PM Access
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Any Available
+                                    Seat</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> High-Speed
+                                    Internet</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Coffee & Tea
+                                    Included</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Basic Printing
+                                    (10 pages)</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-navy w-100 py-3 fw-bold rounded-pill">Buy Day
+                                Pass</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Pass -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card plan-card featured h-100 border-2 border-teal shadow-lg rounded-4 p-3">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="card-body pt-4">
+                            <h4 class="fw-bold text-navy mb-3">Monthly Pass</h4>
+                            <div class="my-4">
+                                <span class="display-4 fw-bold text-navy">$199</span>
+                                <span class="text-muted">/ month</span>
+                            </div>
+                            <p class="text-muted mb-4">Best value for regular users</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> 24/7 Building
+                                    Access</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Any Available
+                                    Seat</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> High-Speed
+                                    Internet</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Unlimited Coffee
+                                    & Tea</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Printing Credits
+                                    (50 pages)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> 2 Guest Passes
+                                    Monthly</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-teal w-100 py-3 fw-bold rounded-pill">Get Monthly Pass</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10-Day Pack -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card plan-card h-100 border border-light shadow-sm rounded-4 p-3">
+                        <div class="card-body">
+                            <h4 class="fw-bold text-navy mb-3">10-Day Pack</h4>
+                            <div class="my-4">
+                                <span class="display-4 fw-bold text-navy">$180</span>
+                                <span class="text-muted">/ 10 days</span>
+                            </div>
+                            <p class="text-muted mb-4">Flexible 10-day package valid for 3 months</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> 9AM - 9PM Access
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Any Available
+                                    Seat</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> High-Speed
+                                    Internet</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Unlimited Coffee
+                                    & Tea</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Printing Credits
+                                    (30 pages)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i> Use Any 10 Days
+                                    in 3 Months</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-navy w-100 py-3 fw-bold rounded-pill">Buy 10-Day
+                                Pack</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-section bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h6 class="text-teal fw-bold text-uppercase ls-2 mb-2">Getting Started</h6>
+                    <h2 class="display-5 fw-bold text-navy mb-4">How Hot Desking Works</h2>
+                    <p class="text-muted mb-5">Getting started with hot desking is simple. Just follow these easy steps:
+                    </p>
+
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-bold text-navy mb-2">Book Online or Walk In</h5>
+                        <p class="text-muted mb-0">Reserve your spot through our app or website, or simply walk in and
+                            find an available desk.</p>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-bold text-navy mb-2">Check In & Pick Your Spot</h5>
+                        <p class="text-muted mb-0">Use our digital check-in system and choose any available desk that
+                            suits your mood for the day.</p>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-bold text-navy mb-2">Get to Work</h5>
+                        <p class="text-muted mb-0">Connect to high-speed WiFi, grab a coffee, and start being productive
+                            in our inspiring environment.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="bg-light rounded-4 p-4">
+                        <h5 class="fw-bold text-navy mb-4">Best For:</h5>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="usage-card text-center">
+                                    <i class="bi bi-person-workspace text-teal fs-1 mb-3"></i>
+                                    <h6 class="fw-bold text-navy mb-2">Freelancers</h6>
+                                    <p class="text-muted small mb-0">Escape home distractions and work in a professional
+                                        setting.</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="usage-card text-center">
+                                    <i class="bi bi-laptop text-teal fs-1 mb-3"></i>
+                                    <h6 class="fw-bold text-navy mb-2">Remote Workers</h6>
+                                    <p class="text-muted small mb-0">Break the monotony of working from home a few days
+                                        a week.</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="usage-card text-center">
+                                    <i class="bi bi-airplane text-teal fs-1 mb-3"></i>
+                                    <h6 class="fw-bold text-navy mb-2">Digital Nomads</h6>
+                                    <p class="text-muted small mb-0">Reliable workspace while traveling or between
+                                        locations.</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="usage-card text-center">
+                                    <i class="bi bi-briefcase text-teal fs-1 mb-3"></i>
+                                    <h6 class="fw-bold text-navy mb-2">Business Travelers</h6>
+                                    <p class="text-muted small mb-0">Professional space for meetings and work while in
+                                        town.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workspace Areas -->
+    <section class="py-section bg-navy text-white">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h6 class="text-teal fw-bold text-uppercase ls-2 mb-2">Explore Our Spaces</h6>
+                    <h2 class="display-5 fw-bold mb-4">Different Areas, Different Vibes</h2>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <div class="availability-indicator">
+                        <div class="availability-dot available"></div>
+                        <span class="text-white">Live Availability Display</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="area-card">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="fw-bold text-navy mb-0">Collaborative Zone</h5>
+                            <span class="flexibility-badge">28 spots</span>
+                        </div>
+                        <p class="text-muted mb-4">Open area with communal tables, perfect for group work and
+                            networking.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-teal-subtle rounded-circle p-2 me-3">
+                                <i class="bi bi-people text-teal"></i>
+                            </div>
+                            <div>
+                                <small class="text-muted">Best for:</small>
+                                <p class="mb-0 fw-semibold text-navy">Team meetings & networking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="area-card">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="fw-bold text-navy mb-0">Focus Zone</h5>
+                            <span class="flexibility-badge" style="background: #6c757d;">12 spots</span>
+                        </div>
+                        <p class="text-muted mb-4">Quiet area with individual pods for deep focus work. Phone calls
+                            restricted.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-teal-subtle rounded-circle p-2 me-3">
+                                <i class="bi bi-ear text-teal"></i>
+                            </div>
+                            <div>
+                                <small class="text-muted">Best for:</small>
+                                <p class="mb-0 fw-semibold text-navy">Concentration & deadlines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="area-card">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="fw-bold text-navy mb-0">Lounge Area</h5>
+                            <span class="flexibility-badge">18 spots</span>
+                        </div>
+                        <p class="text-muted mb-4">Comfortable sofas and lounge chairs for relaxed work or informal
+                            meetings.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-teal-subtle rounded-circle p-2 me-3">
+                                <i class="bi bi-cup text-teal"></i>
+                            </div>
+                            <div>
+                                <small class="text-muted">Best for:</small>
+                                <p class="mb-0 fw-semibold text-navy">Casual work & coffee chats</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Included Amenities -->
+    <section class="py-section bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-teal fw-bold text-uppercase ls-2 mb-2">Everything Included</h6>
+                <h2 class="display-5 fw-bold text-navy mb-4">Premium Amenities</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">All the tools and comforts you need for a
+                    productive day.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-wifi fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">1 Gbps Internet</h6>
+                        <p class="text-muted small mb-0">Blazing fast fiber optic connection</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-cup-hot fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">Premium Refreshments</h6>
+                        <p class="text-muted small mb-0">Specialty coffee, teas & healthy snacks</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-printer fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">Printing Services</h6>
+                        <p class="text-muted small mb-0">Color & B/W printing, scanning, copying</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-phone fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">Phone Booths</h6>
+                        <p class="text-muted small mb-0">Private soundproof booths for calls</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-bicycle fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">Bike Storage</h6>
+                        <p class="text-muted small mb-0">Secure indoor bike parking</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-heart-pulse fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">Gym Training</h6>
+                        <p class="text-muted small mb-0">Strength & cardio workouts</p>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-lock fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">Secure Lockers</h6>
+                        <p class="text-muted small mb-0">Day-use lockers for your belongings</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="bg-white p-4 rounded-3 text-center h-100 shadow-sm border">
+                        <i class="bi bi-calendar-event fs-2 text-teal mb-3 d-block"></i>
+                        <h6 class="fw-bold text-navy mb-2">Events & Workshops</h6>
+                        <p class="text-muted small mb-0">Free member events & networking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h6 class="text-teal fw-bold text-uppercase ls-2 mb-2">Common Questions</h6>
+                    <h2 class="display-5 fw-bold text-navy mb-4">Hot Desk FAQ</h2>
+                    <p class="text-muted mb-4">Got questions about hot desking? We've got answers.</p>
+                    <div class="bg-light rounded-4 p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-teal rounded-circle p-2 me-3">
+                                <i class="bi bi-chat-dots text-white"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-navy mb-1">Still Have Questions?</h5>
+                                <p class="text-muted mb-0 small">Chat with our community team for personalized advice.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="accordion" id="hotDeskFaqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-white text-navy fw-bold rounded-3" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do I need to book in advance?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show"
+                                data-bs-parent="#hotDeskFaqAccordion">
+                                <div class="accordion-body text-muted">
+                                    While walk-ins are welcome, we recommend booking in advance to guarantee a spot,
+                                    especially during peak hours (10AM-3PM). You can book through our website, mobile
+                                    app, or simply show up and check our live availability display.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-white text-navy fw-bold rounded-3"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Can I leave my belongings overnight?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#hotDeskFaqAccordion">
+                                <div class="accordion-body text-muted">
+                                    As hot desks are shared spaces, you'll need to take your belongings with you at the
+                                    end of each day. We provide day-use lockers where you can store items during the
+                                    day. For overnight storage, consider upgrading to a dedicated desk plan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-white text-navy fw-bold rounded-3"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What if I need to take phone calls?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#hotDeskFaqAccordion">
+                                <div class="accordion-body text-muted">
+                                    We have private phone booths available throughout the workspace. These are
+                                    soundproof, equipped with charging ports, and available on a first-come,
+                                    first-served basis. Please keep phone conversations in these booths to maintain a
+                                    quiet environment in the open areas.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-white text-navy fw-bold rounded-3"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can I upgrade to a dedicated desk later?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#hotDeskFaqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Absolutely! Many of our members start with hot desks and upgrade when they need more
+                                    consistency. We make the transition seamless, and any unused days on your hot desk
+                                    pass will be credited toward your new dedicated desk membership.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-section bg-gradient-teal text-white position-relative overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-3">Try Hot Desking Today</h2>
+                    <p class="lead mb-4">Experience the freedom and flexibility of hot desking with our risk-free day
+                        pass.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="book.html" class="btn btn-navy btn-lg rounded-pill px-5 py-3 shadow-lg">
+                            Book Your First Day
+                        </a>
+                        <a href="tel:+15551234567" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">
+                            <i class="bi bi-telephone me-2"></i> Call to Book
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <div class="mt-4 mt-lg-0">
+                        <div class="bg-white text-navy rounded-4 p-4 d-inline-block">
+                            <h4 class="fw-bold mb-1 firstday">First Day Free</h4>
+                            <p class="mb-0 small">For new members with monthly commitment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn-scroll-top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+
+    <!-- Chat Widget HTML -->
+    <div id="chat-widget-container">
+        <button id="chat-toggle-btn"
+            class="btn btn-teal rounded-circle shadow-lg d-flex align-items-center justify-content-center">
+            <i class="bi bi-chat-dots-fill fs-4"></i>
+        </button>
+
+        <div id="chat-window" class="card shadow-xl border-0 d-none animate__animated animate__fadeInUp">
+            <div class="card-header bg-navy text-white p-3 border-0 d-flex align-items-center">
+                <div class="bg-teal rounded-circle p-2 me-2 d-flex align-items-center justify-content-center"
+                    style="width: 36px; height: 36px;">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <h6 class="mb-0 fw-bold">Nexus Assistant</h6>
+                    <small class="text-white-50" style="font-size: 0.75rem;">AI-powered workspace concierge</small>
+                </div>
+                <button id="chat-close-btn" class="btn btn-link text-white p-0"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div id="chat-messages" class="card-body bg-light overflow-auto p-3 d-flex flex-column gap-3"
+                style="height: 400px;">
+                <!-- Messages go here -->
+                <div class="d-flex justify-content-start">
+                    <div class="bg-white p-3 rounded-top-0 border shadow-sm" style="max-width: 85%;">
+                        <span class="fw-semibold text-teal">Nexus Assistant:</span> Hello! I'm your virtual workspace
+                        concierge. How can I help you today? You can ask about pricing, amenities, booking tours, or our
+                        services.
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-white p-3 border-top">
+                <div class="input-group">
+                    <input type="text" id="chat-input" class="form-control bg-light border-0 rounded-start"
+                        placeholder="Ask about pricing, amenities, or booking...">
+                    <button id="chat-send-btn" class="btn btn-teal rounded-end"><i class="bi bi-send-fill"></i></button>
+                </div>
+                <div class="mt-2 text-center">
+                    <small class="text-muted">Try asking: "What are your pricing plans?" or "How do I book a
+                        tour?"</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-section bg-navy">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5 mb-5">
+                <!-- Logo and Description -->
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <h3 class="fw-bold text-white mb-3">NEXUS<span class="text-teal">.</span></h3>
+                        <p class="text-white-50 mb-4">
+                            Redefining the modern workspace with flexibility, community, and premium amenities at the
+                            core
+                            of everything we do.
+                        </p>
+                    </div>
+                    <!-- Social Icons with Hover Effect -->
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#home" class="footer-link">Home</a></li>
+                        <li class="mb-3"><a href="#about" class="footer-link">About Us</a></li>
+                        <li class="mb-3"><a href="#services" class="footer-link">Services</a></li>
+                        <li class="mb-3"><a href="#pricing" class="footer-link">Pricing</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="private.html" class="footer-link">Private Office</a></li>
+                        <li class="mb-3"><a href="Dedicated-Desk.html" class="footer-link">Dedicated Desk</a></li>
+                        <li class="mb-3"><a href="hotdesk.html" class="footer-link">Hot Desk</a></li>
+                        <li class="mb-3"><a href="meeting-room.html" class="footer-link">Meeting Rooms</a></li>
+                        <li><a href="culture.html" class="footer-link">Culture</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Stay Updated</h5>
+                    <p class="text-white-50 mb-4">Subscribe to our newsletter for the latest updates and exclusive
+                        offers.</p>
+                    <div class="newsletter-form">
+                        <div class="input-group mb-3">
+                             <input id="newsletterEmail" type="email" class="form-control bg-navy-light border-0 text-white"
+        placeholder="Your email address">
+                            <button class="btn btn-teal" id="newsletterbtn" type="button">Subscribe</button>
+                        </div>
+                        <p class="text-white-50 small">By subscribing, you agree to our Privacy Policy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom border-top border-navy-light pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="text-white-50 mb-0">&copy; 2026 Nexus Workspace. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="privacy-policy.html" class="footer-link me-4">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="footer-link me-4">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.querySelectorAll('a[href="#contact"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.href = 'index.html#contact';
+            });
+        });
+
+        // Simulate live availability update
+        function updateAvailability() {
+            const spotCount = document.querySelector('.spot-count');
+            const availabilityDot = document.querySelector('.availability-dot');
+
+            // Randomize between 30-50 spots
+            const newCount = Math.floor(Math.random() * 21) + 30;
+            spotCount.textContent = newCount;
+
+            // Change status based on availability
+            if (newCount < 10) {
+                availabilityDot.className = 'availability-dot limited';
+                spotCount.style.color = '#ffc107';
+            } else {
+                availabilityDot.className = 'availability-dot available';
+                spotCount.style.color = '#20c997';
+            }
+        }
+
+        // Update every 30 seconds
+        setInterval(updateAvailability, 30000);
+    </script>
+
+</body>
+
+</html>

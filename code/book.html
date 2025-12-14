@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Desk | Nexus Workspace</title>
+    <meta name="description" content="Book your premium co-working space at Nexus Workspace.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/work-desk.png">
+
+    <!-- AOS Animation Library -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FullCalendar CSS -->
+    <link href='assets/css/main.min.css' rel='stylesheet' />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader-container">
+        <div class="text-center">
+            <div class="spinner-border text-teal mb-3" style="width: 3rem; height: 3rem;" role="status"></div>
+            <h2 class="text-white h4 tracking-widest animate__animated animate__pulse animate__infinite">NEXUS</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark transition-all" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                NEXUS<span class="text-teal">.</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="book.html" class="btn btn-teal rounded-pill px-4 fw-semibold">Book a Desk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-white position-relative" style="min-height: 60vh;">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">
+                        Book Your <span class="text-teal">Perfect Workspace</span>
+                    </h1>
+                    <p class="lead mb-0 animate__animated animate__fadeInUp animate__delay-1s">
+                        Reserve your spot in our premium co-working space in just a few clicks.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="bg-teal-subtle text-teal p-4 rounded-4 d-inline-block">
+                        <h5 class="fw-bold mb-2">Easy 3-Step Process</h5>
+                        <p class="mb-0 small">Select → Book → Work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Process -->
+    <section class="booking-section bg-light">
+        <div class="container">
+            <!-- Booking Steps -->
+            <div class="booking-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-circle">
+                        <span>1</span>
+                        <i class="bi bi-check" style="display: none;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0">Select Plan</h6>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-circle">
+                        <span>2</span>
+                        <i class="bi bi-check" style="display: none;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0">Choose Date & Time</h6>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-circle">
+                        <span>3</span>
+                        <i class="bi bi-check" style="display: none;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0">Personal Details</h6>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-circle">
+                        <span>4</span>
+                        <i class="bi bi-check" style="display: none;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0">Confirmation</h6>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- Left Column: Booking Form -->
+                <div class="col-lg-8">
+                    <!-- Step 1: Select Plan -->
+                    <div id="step1" class="step-content active">
+                        <h3 class="fw-bold text-navy mb-4">Choose Your Workspace Plan</h3>
+                        <p class="text-muted mb-5">Select the perfect plan that fits your work style and requirements.</p>
+
+                        <div class="row g-4">
+                            <!-- Hot Desk -->
+                            <div class="col-md-6">
+                                <div class="plan-card" data-plan="hot-desk" data-price="25">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <h4 class="fw-bold text-navy mb-1">Hot Desk</h4>
+                                            <div class="d-flex align-items-center">
+                                                <span class="display-6 fw-bold text-teal">$25</span>
+                                                <span class="text-muted ms-2">/ day</span>
+                                            </div>
+                                        </div>
+                                        <span class="availability-badge available">Available</span>
+                                    </div>
+                                    <p class="text-muted mb-4">Flexible seating in our vibrant open-plan area. Perfect for freelancers and remote workers.</p>
+                                    
+                                    <div class="desk-preview mb-4">
+                                        <img src="assets/images/Hero.jpeg" alt="Hot Desk">
+                                        <span class="desk-tag">Flexible</span>
+                                        <span class="desk-capacity">Open Space</span>
+                                    </div>
+
+                                    <ul class="plan-features">
+                                        <li><i class="bi bi-check-circle-fill"></i> High-speed WiFi</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Coffee & Refreshments</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Community Events Access</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Printing (100 pages/month)</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> 9AM - 6PM Access</li>
+                                    </ul>
+
+                                    <div class="capacity-indicator">
+                                        <small class="text-muted">Current Capacity:</small>
+                                        <div class="d-flex gap-1">
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot"></div>
+                                            <div class="capacity-dot"></div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-outline-navy w-100 mt-4 select-plan-btn">
+                                        Select Plan
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Dedicated Desk -->
+                            <div class="col-md-6">
+                                <div class="plan-card" data-plan="dedicated-desk" data-price="250">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <h4 class="fw-bold text-navy mb-1">Dedicated Desk</h4>
+                                            <div class="d-flex align-items-center">
+                                                <span class="display-6 fw-bold text-teal">$250</span>
+                                                <span class="text-muted ms-2">/ month</span>
+                                            </div>
+                                        </div>
+                                        <span class="availability-badge limited">Limited</span>
+                                    </div>
+                                    <p class="text-muted mb-4">Your own personal desk with lockable storage. Ideal for regular visitors who need consistency.</p>
+                                    
+                                    <div class="desk-preview mb-4">
+                                        <img src="assets/images/private-office-3.png" alt="Dedicated Desk">
+                                        <span class="desk-tag">Personal</span>
+                                        <span class="desk-capacity">Personal Locker</span>
+                                    </div>
+
+                                    <ul class="plan-features">
+                                        <li><i class="bi bi-check-circle-fill"></i> 24/7 Access</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Lockable Storage</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Meeting Room (4 hrs/month)</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Printing (500 pages/month)</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Mail Handling</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Community Events Priority</li>
+                                    </ul>
+
+                                    <div class="capacity-indicator">
+                                        <small class="text-muted">Current Capacity:</small>
+                                        <div class="d-flex gap-1">
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot"></div>
+                                            <div class="capacity-dot"></div>
+                                            <div class="capacity-dot"></div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-outline-navy w-100 mt-4 select-plan-btn">
+                                        Select Plan
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Private Cabin -->
+                            <div class="col-md-6">
+                                <div class="plan-card" data-plan="private-cabin" data-price="800">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <h4 class="fw-bold text-navy mb-1">Private Cabin</h4>
+                                            <div class="d-flex align-items-center">
+                                                <span class="display-6 fw-bold text-teal">$800</span>
+                                                <span class="text-muted ms-2">/ month</span>
+                                            </div>
+                                        </div>
+                                        <span class="availability-badge available">Available</span>
+                                    </div>
+                                    <p class="text-muted mb-4">Fully furnished private office for 2-4 people. Perfect for small teams and startups.</p>
+                                    
+                                    <div class="desk-preview mb-4">
+                                        <img src="assets/images/Gallery1.jpeg" alt="Private Cabin">
+                                        <span class="desk-tag">Team</span>
+                                        <span class="desk-capacity">2-4 People</span>
+                                    </div>
+
+                                    <ul class="plan-features">
+                                        <li><i class="bi bi-check-circle-fill"></i> Private Office Space</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> 24/7 Secure Access</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Meeting Room (10 hrs/month)</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Unlimited Printing</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Dedicated Phone Line</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Client Reception</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Business Address</li>
+                                    </ul>
+
+                                    <div class="capacity-indicator">
+                                        <small class="text-muted">Current Capacity:</small>
+                                        <div class="d-flex gap-1">
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot"></div>
+                                            <div class="capacity-dot"></div>
+                                            <div class="capacity-dot"></div>
+                                            <div class="capacity-dot"></div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-outline-navy w-100 mt-4 select-plan-btn">
+                                        Select Plan
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Virtual Office -->
+                            <div class="col-md-6">
+                                <div class="plan-card" data-plan="virtual-office" data-price="50">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <h4 class="fw-bold text-navy mb-1">Virtual Office</h4>
+                                            <div class="d-flex align-items-center">
+                                                <span class="display-6 fw-bold text-teal">$50</span>
+                                                <span class="text-muted ms-2">/ month</span>
+                                            </div>
+                                        </div>
+                                        <span class="availability-badge available">Available</span>
+                                    </div>
+                                    <p class="text-muted mb-4">Professional business address and mail handling without the physical desk.</p>
+                                    
+                                    <div class="desk-preview mb-4">
+                                        <img src="assets/images/about.jpeg" alt="Virtual Office">
+                                        <span class="desk-tag">Remote</span>
+                                        <span class="desk-capacity">Virtual</span>
+                                    </div>
+
+                                    <ul class="plan-features">
+                                        <li><i class="bi bi-check-circle-fill"></i> Professional Business Address</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Mail Scanning & Forwarding</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Meeting Room (2 hrs/month)</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Phone Answering Service</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Access to Community Events</li>
+                                    </ul>
+
+                                    <div class="capacity-indicator">
+                                        <small class="text-muted">Current Capacity:</small>
+                                        <div class="d-flex gap-1">
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot filled"></div>
+                                            <div class="capacity-dot"></div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-outline-navy w-100 mt-4 select-plan-btn">
+                                        Select Plan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-5">
+                            <div></div>
+                            <button class="btn btn-teal px-5 py-3" onclick="nextStep(2)">Continue to Date & Time <i class="bi bi-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Date & Time -->
+                    <div id="step2" class="step-content">
+                        <h3 class="fw-bold text-navy mb-4">Select Date & Time</h3>
+                        <p class="text-muted mb-5">Choose when you'd like to start using your workspace.</p>
+
+                        <div class="calendar-container mb-5">
+                            <div id="calendar"></div>
+                        </div>
+
+                        <div class="mb-5">
+                            <h5 class="fw-bold text-navy mb-4">Select Time Slot</h5>
+                            <div class="row g-3" id="timeSlots">
+                                <!-- Time slots will be generated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="alert bg-teal-subtle border border-teal rounded-4">
+                            <div class="d-flex">
+                                <i class="bi bi-info-circle-fill text-teal fs-4 me-3"></i>
+                                <div>
+                                    <h6 class="fw-bold text-teal mb-2">Flexible Start Date</h6>
+                                    <p class="mb-0 text-muted">For monthly plans, you can start on any available date. Day passes are available for immediate booking.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-5">
+                            <button class="btn btn-outline-navy px-5 py-3" onclick="prevStep(1)"><i class="bi bi-arrow-left me-2"></i> Back to Plans</button>
+                            <button class="btn btn-teal px-5 py-3" onclick="nextStep(3)">Continue to Details <i class="bi bi-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Personal Details -->
+                    <div id="step3" class="step-content">
+                        <h3 class="fw-bold text-navy mb-4">Your Information</h3>
+                        <p class="text-muted mb-5">Please provide your details to complete the booking.</p>
+
+                        <form id="bookingForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label fw-semibold text-navy">Full Name *</label>
+                                        <input type="text" class="form-control" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label fw-semibold text-navy">Email Address *</label>
+                                        <input type="email" class="form-control" placeholder="john@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label fw-semibold text-navy">Phone Number *</label>
+                                        <input type="tel" class="form-control" placeholder="+1 (555) 123-4567" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label fw-semibold text-navy">Company Name</label>
+                                        <input type="text" class="form-control" placeholder="Optional">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label fw-semibold text-navy">Special Requirements</label>
+                                        <textarea class="form-control" rows="4" placeholder="Any special requests or accessibility needs?"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label fw-semibold text-navy">Referral Code</label>
+                                        <input type="text" class="form-control" placeholder="Enter referral code if any">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                        <label class="form-check-label text-muted" for="termsCheck">
+                                            I agree to the <a href="#" class="text-teal">Terms & Conditions</a> and <a href="#" class="text-teal">Privacy Policy</a>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletterCheck">
+                                        <label class="form-check-label text-muted" for="newsletterCheck">
+                                            Subscribe to our newsletter for updates and offers
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="d-flex justify-content-between mt-5">
+                            <button class="btn btn-outline-navy px-5 py-3" onclick="prevStep(2)"><i class="bi bi-arrow-left me-2"></i> Back to Date & Time</button>
+                            <button class="btn btn-teal px-5 py-3" onclick="completeBooking()">Complete Booking <i class="bi bi-check-lg ms-2"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Confirmation -->
+                    <div id="step4" class="step-content">
+                        <div class="booking-success">
+                            <div class="success-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <h2 class="fw-bold text-navy mb-3">Booking Confirmed!</h2>
+                            <p class="text-muted mb-4">Your workspace has been successfully booked. We've sent a confirmation email with all the details.</p>
+                            
+                            <div class="alert bg-teal-subtle border border-teal rounded-4 mb-5" style="max-width: 500px; margin: 0 auto;">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-envelope-fill text-teal fs-4 me-3"></i>
+                                    <div>
+                                        <h6 class="fw-bold text-teal mb-1">Check Your Email</h6>
+                                        <p class="mb-0 text-muted small">Booking details and access instructions have been sent to your email.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 justify-content-center">
+                                <a href="index.html" class="btn btn-outline-navy px-5 py-3">Back to Home</a>
+                                <a href="#" class="btn btn-teal px-5 py-3">Download Receipt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Booking Summary & Process -->
+                <div class="col-lg-4">
+                    <div class="booking-process mb-5">
+                        <h3 class="fw-bold mb-4">Booking Process</h3>
+                        
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Select Your Plan</h5>
+                                <p class="text-white-50 mb-0 small">Choose from flexible daily, monthly, or team plans.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Pick Date & Time</h5>
+                                <p class="text-white-50 mb-0 small">Select your preferred start date and access hours.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Provide Details</h5>
+                                <p class="text-white-50 mb-0 small">Fill in your information and special requirements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Get Access</h5>
+                                <p class="text-white-50 mb-0 small">Receive instant confirmation and access instructions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="booking-summary">
+                        <h4 class="fw-bold text-navy mb-4">Booking Summary</h4>
+                        
+                        <div class="summary-item">
+                            <span class="text-muted">Plan:</span>
+                            <span class="fw-semibold" id="summary-plan">Not selected</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span class="text-muted">Duration:</span>
+                            <span class="fw-semibold" id="summary-duration">-</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span class="text-muted">Start Date:</span>
+                            <span class="fw-semibold" id="summary-date">Not selected</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span class="text-muted">Time Slot:</span>
+                            <span class="fw-semibold" id="summary-time">Not selected</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span class="text-muted">Plan Price:</span>
+                            <span class="fw-semibold" id="summary-price">$0</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span class="text-muted">Setup Fee:</span>
+                            <span class="fw-semibold">$25</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span class="text-muted">Tax (8%):</span>
+                            <span class="fw-semibold" id="summary-tax">$0</span>
+                        </div>
+                        
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="summary-total">$0</span>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="alert alert-success small" role="alert">
+                                <i class="bi bi-shield-check me-2"></i>
+                                <strong>Secure booking</strong> · Your information is protected
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h6 class="fw-bold text-navy mb-3">Need Help?</h6>
+                            <div class="d-flex align-items-center text-muted small mb-2">
+                                <i class="bi bi-telephone me-2"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="d-flex align-items-center text-muted small">
+                                <i class="bi bi-envelope me-2"></i>
+                                <span>bookings@nexusworkspace.com</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-section bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-navy mb-3">Booking FAQs</h2>
+                <p class="text-muted">Common questions about booking your workspace</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-light rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Can I cancel or reschedule my booking?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Yes, you can cancel or reschedule up to 24 hours before your booking start time. Monthly plans require 30 days notice for cancellation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Is there a minimum commitment period?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Day passes have no minimum commitment. Monthly plans require a minimum of 1 month, with flexible renewal options.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What payment methods do you accept?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for corporate accounts.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="accordion" id="faqAccordion2">
+                        <div class="accordion-item border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-light rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can I upgrade or downgrade my plan?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body text-muted">
+                                    Yes, you can upgrade at any time. Downgrading requires notice before your next billing cycle for monthly plans.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Are meeting rooms included?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body text-muted">
+                                    Meeting room access varies by plan. Monthly plans include complimentary hours, while day passes can book rooms at an additional hourly rate.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    What if I need technical support?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body text-muted">
+                                    Our on-site tech support is available during business hours. After-hours support is available for 24/7 access members via our dedicated helpline.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-navy">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5 mb-5">
+                <!-- Logo and Description -->
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <h3 class="fw-bold text-white mb-3">NEXUS<span class="text-teal">.</span></h3>
+                        <p class="text-white-50 mb-4">
+                            Redefining the modern workspace with flexibility, community, and premium amenities at the
+                            core
+                            of everything we do.
+                        </p>
+                    </div>
+                    <!-- Social Icons with Hover Effect -->
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon bg-teal text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#home" class="footer-link">Home</a></li>
+                        <li class="mb-3"><a href="#about" class="footer-link">About Us</a></li>
+                        <li class="mb-3"><a href="#services" class="footer-link">Services</a></li>
+                        <li class="mb-3"><a href="#pricing" class="footer-link">Pricing</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="private.html" class="footer-link">Private Office</a></li>
+                        <li class="mb-3"><a href="Dedicated-Desk.html" class="footer-link">Dedicated Desk</a></li>
+                        <li class="mb-3"><a href="hotdesk.html" class="footer-link">Hot Desk</a></li>
+                        <li class="mb-3"><a href="meeting-room.html" class="footer-link">Meeting Rooms</a></li>
+                        <li><a href="culture.html" class="footer-link">Culture</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4 fs-6">Stay Updated</h5>
+                    <p class="text-white-50 mb-4">Subscribe to our newsletter for the latest updates and exclusive
+                        offers.</p>
+                    <div class="newsletter-form">
+                        <div class="input-group mb-3">
+                             <input id="newsletterEmail" type="email" class="form-control bg-navy-light border-0 text-white"
+        placeholder="Your email address">
+                            <button class="btn btn-teal" id="newsletterbtn" type="button">Subscribe</button>
+                        </div>
+                        <p class="text-white-50 small">By subscribing, you agree to our Privacy Policy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom border-top border-navy-light pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="text-white-50 mb-0">&copy; 2026 Nexus Workspace. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="privacy-policy.html" class="footer-link me-4">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="footer-link me-4">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn-scroll-top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <script src='assets/js/main.min.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Preloader
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.classList.add('preloader-hide');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 1500);
+
+            // 2. Initialize AOS
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+
+            // 3. Navbar Scroll Effect
+            const navbar = document.getElementById('mainNav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled', 'shadow-sm');
+                } else {
+                    navbar.classList.remove('scrolled', 'shadow-sm');
+                }
+            });
+
+            // 4. Scroll to Top Functionality
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // 5. Initialize Calendar
+            initCalendar();
+            
+            // 6. Initialize Plan Selection
+            initPlanSelection();
+            
+            // 7. Generate Time Slots
+            generateTimeSlots();
+        });
+
+        // Booking State
+        let bookingState = {
+            plan: null,
+            planName: '',
+            price: 0,
+            date: null,
+            time: null,
+            duration: '1 day'
+        };
+
+        // Initialize Calendar
+        function initCalendar() {
+            const calendarEl = document.getElementById('calendar');
+            const today = new Date();
+            
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                initialDate: today,
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                dateClick: function(info) {
+                    // Clear previous selection
+                    document.querySelectorAll('.fc-daygrid-day.selected').forEach(day => {
+                        day.classList.remove('selected');
+                    });
+                    
+                    // Add selected class
+                    info.dayEl.classList.add('selected');
+                    
+                    // Store selected date
+                    bookingState.date = info.dateStr;
+                    updateBookingSummary();
+                    
+                    // Generate time slots for selected date
+                    generateTimeSlots();
+                },
+                selectable: true,
+                select: function(info) {
+                    bookingState.date = info.startStr;
+                    updateBookingSummary();
+                }
+            });
+
+            calendar.render();
+            
+            // Set today as selected
+            setTimeout(() => {
+                const todayCell = document.querySelector('.fc-day-today');
+                if (todayCell) {
+                    todayCell.click();
+                }
+            }, 100);
+        }
+
+        // Plan Selection
+        function initPlanSelection() {
+            const planCards = document.querySelectorAll('.plan-card');
+            
+            planCards.forEach(card => {
+                const selectBtn = card.querySelector('.select-plan-btn');
+                
+                selectBtn.addEventListener('click', () => {
+                    // Remove selected class from all cards
+                    planCards.forEach(c => c.classList.remove('selected'));
+                    
+                    // Add selected class to clicked card
+                    card.classList.add('selected');
+                    
+                    // Update booking state
+                    bookingState.plan = card.dataset.plan;
+                    bookingState.planName = card.querySelector('h4').textContent;
+                    bookingState.price = parseInt(card.dataset.price);
+                    
+                    // Update button text
+                    selectBtn.textContent = 'Selected';
+                    selectBtn.classList.remove('btn-outline-navy');
+                    selectBtn.classList.add('btn-teal');
+                    
+                    // Update duration based on plan
+                    if (bookingState.plan === 'hot-desk') {
+                        bookingState.duration = '1 day';
+                    } else if (bookingState.plan === 'virtual-office') {
+                        bookingState.duration = '1 month';
+                    } else {
+                        bookingState.duration = '1 month (minimum)';
+                    }
+                    
+                    updateBookingSummary();
+                });
+            });
+        }
+
+        // Generate Time Slots
+        function generateTimeSlots() {
+            const timeSlotsContainer = document.getElementById('timeSlots');
+            timeSlotsContainer.innerHTML = '';
+            
+            const timeSlots = [
+                { time: '9:00 AM', booked: false },
+                { time: '10:00 AM', booked: false },
+                { time: '11:00 AM', booked: false },
+                { time: '12:00 PM', booked: true },
+                { time: '1:00 PM', booked: false },
+                { time: '2:00 PM', booked: false },
+                { time: '3:00 PM', booked: true },
+                { time: '4:00 PM', booked: false },
+                { time: '5:00 PM', booked: false },
+                { time: '6:00 PM', booked: false }
+            ];
+            
+            timeSlots.forEach(slot => {
+                const col = document.createElement('div');
+                col.className = 'col-6 col-md-4';
+                
+                const timeSlot = document.createElement('div');
+                timeSlot.className = `time-slot ${slot.booked ? 'booked' : ''}`;
+                timeSlot.textContent = slot.time;
+                
+                if (!slot.booked) {
+                    timeSlot.addEventListener('click', () => {
+                        // Remove selected class from all time slots
+                        document.querySelectorAll('.time-slot').forEach(ts => {
+                            ts.classList.remove('selected');
+                        });
+                        
+                        // Add selected class to clicked time slot
+                        timeSlot.classList.add('selected');
+                        
+                        // Update booking state
+                        bookingState.time = slot.time;
+                        updateBookingSummary();
+                    });
+                }
+                
+                col.appendChild(timeSlot);
+                timeSlotsContainer.appendChild(col);
+            });
+        }
+
+        // Update Booking Summary
+        function updateBookingSummary() {
+                   }
+
+        // Step Navigation
+        let currentStep = 1;
+
+        function nextStep(step) {
+            // Validate current step
+            if (currentStep === 1 && !bookingState.plan) {
+                alert('Please select a plan before continuing.');
+                return;
+            }
+            
+            if (currentStep === 2 && (!bookingState.date || !bookingState.time)) {
+                alert('Please select a date and time before continuing.');
+                return;
+            }
+            
+            if (currentStep === 3) {
+                const form = document.getElementById('bookingForm');
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+            }
+            
+            // Hide current step
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            document.querySelector(`.step[data-step="${currentStep}"]`).classList.remove('active');
+            
+            // Update step completion
+            document.querySelector(`.step[data-step="${currentStep}"]`).classList.add('completed');
+            document.querySelector(`.step[data-step="${currentStep}"] .step-circle i`).style.display = 'block';
+            document.querySelector(`.step[data-step="${currentStep}"] .step-circle span`).style.display = 'none';
+            
+            // Show next step
+            currentStep = step;
+            document.getElementById(`step${currentStep}`).classList.add('active');
+            document.querySelector(`.step[data-step="${currentStep}"]`).classList.add('active');
+            
+            // Scroll to top of form
+            document.querySelector('.booking-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function prevStep(step) {
+            // Hide current step
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            document.querySelector(`.step[data-step="${currentStep}"]`).classList.remove('active');
+            
+            // Show previous step
+            currentStep = step;
+            document.getElementById(`step${currentStep}`).classList.add('active');
+            document.querySelector(`.step[data-step="${currentStep}"]`).classList.add('active');
+            
+            // Scroll to top of form
+            document.querySelector('.booking-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Complete Booking
+        function completeBooking() {
+            // Simulate booking process
+            const submitBtn = document.querySelector('#step3 .btn-teal');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Processing...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                nextStep(4);
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                
+                // Show success animation
+                const successSection = document.querySelector('.booking-success');
+                successSection.style.display = 'block';
+                successSection.classList.add('animate__animated', 'animate__fadeIn');
+            }, 1500);
+        }
+
+        // Initialize with today's date
+        const today = new Date();
+        bookingState.date = today.toISOString().split('T')[0];
+        updateBookingSummary();
+    </script>
+</body>
+</html>
